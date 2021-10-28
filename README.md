@@ -9,18 +9,18 @@ api_path/{parameter_text}
 ```
 ## Przykład
 ```
-http://localhost:8080/api/v1/ABCDefgh1234!@#$
+http://localhost:8080/api/v1/ABCabc123@!@
 ```
 ## Wynik
 Odpwiedź w formacie JSON:
 ```json
 {
-  "parameter": "hElLo WoRlD1337 aaa!!!",
-  "length" : 22, 
-  "digits": 4,
-  "upperCase": 5,
-  "lowerCase": 8,
-  "whitespace": 2,
+  "parameter": "ABCabc123@!@",
+  "length" : 12, 
+  "digits": 3,
+  "upperCase": 3,
+  "lowerCase": 3,
+  "whitespace": 0,
   "specialCharacters": 3
 }
 ```
